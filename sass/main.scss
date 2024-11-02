@@ -1,0 +1,357 @@
+@import './variables';
+
+/*
+  =============
+  = Utilities =
+  =============
+*/
+.bg-section {
+  background-color: #f6f9fe;
+}
+
+/*
+  ==============
+  = Components =
+  ==============
+*/
+.heading {
+  .title-before {
+    background-color: #e7f1fd;
+  }
+}
+
+/*
+  ========
+  = Body =
+  ========
+*/
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+/*
+  ==========
+  = Navbar =
+  ==========
+*/
+.navbar {
+  .navbar-brand {
+    font-size: 1.75rem;
+  }
+
+  .navbar-toggler {
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -100%;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $blue;
+      transition: .2s ease-in-out;
+    }
+
+    &:hover::before {
+      left: 0;
+    }
+
+    &:hover,
+    &.active {
+      color: $blue;
+    }
+  }
+}
+
+/*
+  ==========
+  = Header =
+  ==========
+*/
+#header {
+  height: calc(75vh + 84px);
+  z-index: 1;
+
+  background: {
+    image: url("../img/hero-bg.jpg");
+    position: center;
+    size: cover;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: transparentize(#fff, .3);
+    z-index: -1;
+  }
+
+  .container {
+    top: calc(84px / 2);
+  }
+}
+
+/*
+  =========
+  = About =
+  =========
+*/
+#about {
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/*
+  ============
+  = Progress =
+  ============
+*/
+.progress-bar {
+  transition: 2s;
+}
+
+/*
+  ============
+  = Counter =
+  ============
+*/
+.counter-sec {
+  .icon {
+    width: 60px;
+    height: 60px;
+    transform: translateX(-50%);
+  }
+}
+
+/*
+  ===========
+  = Counter =
+  ===========
+*/
+#services {
+  .box {
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: -100%;
+      background-color: $blue;
+      transition: inherit;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      left: 0;
+    }
+
+    &>* {
+      transition: inherit;
+    }
+
+    &:hover>* {
+      color: #fff !important;
+    }
+  }
+}
+
+/*
+  ==========
+  = Slider =
+  ==========
+*/
+.slider-sec {
+  background: {
+    image: url("../img/testimonials-bg.jpg");
+    size: cover;
+    position: center;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: transparentize(#000, .3);
+  }
+
+  #carouselExampleCaptions {
+    height: 350px;
+
+    .carousel-item img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+/*
+  =============
+  = Portfolio =
+  =============
+*/
+#portfolio {
+  .list-group {
+    li {
+      cursor: pointer;
+    }
+  }
+
+  .filterd-items {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1.75rem;
+
+    >a {
+      height: 350px;
+
+      &.shown {
+        display: block;
+        animation: .7s show ease-in-out;
+      }
+
+      &.hidden {
+        display: none;
+        animation: .7s show ease-in-out;
+      }
+
+      img {
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+/*
+  ===========
+  = Contact =
+  ===========
+*/
+#contact {
+  .row {
+
+    &.call,
+    &.form {
+      row-gap: 1rem;
+    }
+
+    &.location {
+      row-gap: 1.25rem;
+    }
+
+    &.form {
+      .form-control {
+
+        &:focus {
+          box-shadow: none;
+          border-color: #DEE2E6;
+        }
+      }
+    }
+  }
+
+  i {
+    width: 50px;
+    height: 50px;
+    border: 1px dashed;
+  }
+}
+
+/*
+  ==========
+  = Footer =
+  ==========
+*/
+footer {
+  .row {
+    row-gap: 1.5rem;
+
+    .footer-list a {
+      position: relative;
+
+      &::before {
+        content: "";
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        border: 5px solid transparent;
+        border-left-color: $blue;
+      }
+    }
+
+    .social {
+      a {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+/*
+  =========
+  = Modal =
+  =========
+*/
+#video {
+  &.modal.fade .modal-dialog {
+    transition: transform .3s ease-out;
+    transform: scale(0);
+  }
+
+  &.modal.show .modal-dialog {
+    transform: none;
+  }
+
+  .modal-header {
+    .btn-close {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  object {
+    height: 80vh;
+  }
+}
+
+/*
+  ==============
+  = Animations =
+  ==============
+*/
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

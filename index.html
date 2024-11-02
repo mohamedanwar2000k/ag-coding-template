@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ag Coding</title>
+
+  <!-- ===== Trebuchet MS Font ===== -->
+  <link href="https://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet">
+
+  <!-- ===== Bootstrap Icons ===== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- ===== Light Gallery ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css"
+    integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- ===== Aos ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- ===== Combiled Bootstrap 5 ===== -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- ===== Main CSS File ===== -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbar">
+  <!-- ===== Navbar ===== -->
+  <nav id="navbar" class="navbar navbar-expand-md bg-body shadow-sm py-3 fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-primary" href="#">Ag Coding</a>
+      <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-text-right"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#header">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Header ===== -->
+  <header id="header" class="position-relative d-flex align-items-center overflow-hidden">
+    <div class="container position-relative">
+      <div class="intro-text text-center text-md-start">
+        <h3 class="display-5" data-aos="fade-right" data-aos-duration="2000">
+          Welcome to
+          <span class="text-primary">Ag Coding</span>
+        </h3>
+        <p class="text-muted" data-aos="fade-left" data-aos-duration="2000">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Tenetur, incidunt.</p>
+      </div>
+      <div class="btns d-flex justify-content-center justify-content-md-start" data-aos="fade-up"
+        data-aos-duration="2000">
+        <button class="btn btn-primary me-2">Get Started</button>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#video">
+          <i class="bi bi-play-circle me-2"></i>Watch Video
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="bg-section py-5 overflow-hidden">
+    <div class="container">
+      <div class="heading text-center mb-5">
+        <span class="d-inline-block title-before text-uppercase text-primary mb-2 rounded-pill">About</span>
+        <h3 class="display-6">Find Our More <span class="text-primary">About Us</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque libero consequatur quod voluptas
+          repudiandae!
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-3 mb-lg-0" data-aos="fade-right" data-aos-duration="2000">
+          <figure class="mb-0">
+            <img class="img-fluid" src="img/about.jpg" alt="About">
+          </figure>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
+          <h4 class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+          <p class="fst-italic mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam a explicabo, ad quo sequi voluptatibus! A,
+            numquam.
+          </p>
+          <ul class="list-unstyled">
+            <li class="d-flex gap-3 mb-4">
+              <div
+                class="icon flex-shrink-0 bg-body shadow d-flex justify-content-center align-items-center rounded-circle">
+                <i class="bi bi-book fs-3 text-primary"></i>
+              </div>
+              <div class="text">
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci?</p>
+              </div>
+            </li>
+            <li class="d-flex gap-3">
+              <div
+                class="icon flex-shrink-0 bg-body shadow d-flex justify-content-center align-items-center rounded-circle">
+                <i class="bi bi-book fs-3 text-primary"></i>
+              </div>
+              <div class="text">
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci?</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Progress ===== -->
+  <section class="progress-sec py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Progress 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="d-flex justify-content-between mb-1">
+            <b>HTML</b>
+            <b class="progress-value">40%</b>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="40"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped"></div>
+          </div>
+        </div>
+        <!-- Progress 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="d-flex justify-content-between mb-1">
+            <b>CSS</b>
+            <b class="progress-value">50%</b>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped"></div>
+          </div>
+        </div>
+        <!-- Progress 3 -->
+        <div class="col-md-6 mb-4">
+          <div class="d-flex justify-content-between mb-1">
+            <b>Javascript</b>
+            <b class="progress-value">60%</b>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="60"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped"></div>
+          </div>
+        </div>
+        <!-- Progress 4 -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="d-flex justify-content-between mb-1">
+            <b>PHP</b>
+            <b class="progress-value">70%</b>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped"></div>
+          </div>
+        </div>
+        <!-- Progress 5 -->
+        <div class="col-md-6 mb-4">
+          <div class="d-flex justify-content-between mb-1">
+            <b>Wordpress</b>
+            <b class="progress-value">80%</b>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="80"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped"></div>
+          </div>
+        </div>
+        <!-- Progress 6 -->
+        <div class="col-md-6">
+          <div class="d-flex justify-content-between mb-1">
+            <b>Photoshop</b>
+            <b class="progress-value">90%</b>
+          </div>
+          <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="90"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Counter ===== -->
+  <section class="counter-sec py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+          <div class="bg-section p-5 position-relative">
+            <div
+              class="icon bg-primary rounded-circle d-flex justify-content-center align-items-center position-absolute top-0 start-50 translate-middle">
+              <i class="bi bi-emoji-smile fs-3 text-light"></i>
+            </div>
+            <h3 data-counter="110">0</h3>
+            <h4>Happy Clients</h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
+          <div class="bg-section p-5 position-relative">
+            <div
+              class="icon bg-primary rounded-circle d-flex justify-content-center align-items-center position-absolute top-0 start-50 translate-middle">
+              <i class="bi bi-journal-richtext fs-3 text-light"></i>
+            </div>
+            <h3 data-counter="120">0</h3>
+            <h4>Projects</h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
+          <div class="bg-section p-5 position-relative">
+            <div
+              class="icon bg-primary rounded-circle d-flex justify-content-center align-items-center position-absolute top-0 start-50 translate-middle">
+              <i class="bi bi-headset fs-3 text-light"></i>
+            </div>
+            <h3 data-counter="24">0</h3>
+            <h4>Supports</h4>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="bg-section p-5 position-relative">
+            <div
+              class="icon bg-primary rounded-circle d-flex justify-content-center align-items-center position-absolute top-0 start-50 translate-middle">
+              <i class="bi bi-people fs-3 text-light"></i>
+            </div>
+            <h3 data-counter="15">0</h3>
+            <h4>Hard Workers</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Clients ===== -->
+  <section class="clients bg-section py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-2 p-4 d-flex align-items-center">
+          <img class="img-fluid" src="img/clients/client-1.png" alt="client-1">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 p-4 d-flex align-items-center">
+          <img class="img-fluid" src="img/clients/client-2.png" alt="client-2">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 p-4 d-flex align-items-center">
+          <img class="img-fluid" src="img/clients/client-3.png" alt="client-3">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 p-4 d-flex align-items-center">
+          <img class="img-fluid" src="img/clients/client-4.png" alt="client-4">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 p-4 d-flex align-items-center">
+          <img class="img-fluid" src="img/clients/client-5.png" alt="client-5">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 p-4 d-flex align-items-center">
+          <img class="img-fluid" src="img/clients/client-6.png" alt="client-6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="heading text-center mb-5">
+        <span class="d-inline-block title-before text-uppercase text-primary mb-2 rounded-pill">Services</span>
+        <h3 class="display-6">Check Our <span class="text-primary">Services</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque libero consequatur quod voluptas
+          repudiandae!
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="box shadow p-5 position-relative">
+            <i class="bi bi-bar-chart-steps fs-1 text-primary"></i>
+            <h5 class="fw-bold my-3">Lorem, ipsum dolor.</h5>
+            <p class="text-muted lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non delectus quam, illo explicabo ducimus
+              in!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="box shadow p-5 position-relative">
+            <i class="bi bi-bar-chart-steps fs-1 text-primary"></i>
+            <h5 class="fw-bold my-3">Lorem, ipsum dolor.</h5>
+            <p class="text-muted lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non delectus quam, illo explicabo ducimus
+              in!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+          <div class="box shadow p-5 position-relative">
+            <i class="bi bi-bar-chart-steps fs-1 text-primary"></i>
+            <h5 class="fw-bold my-3">Lorem, ipsum dolor.</h5>
+            <p class="text-muted lh-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non delectus quam, illo explicabo ducimus
+              in!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Slider ===== -->
+  <section class="slider-sec position-relative pb-2">
+    <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img src="img/testimonials/testimonials-1.jpg" class="d-block mx-auto rounded-circle mt-5"
+              alt="testimonials-1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="img/testimonials/testimonials-2.jpg" class="d-block mx-auto rounded-circle mt-5"
+              alt="testimonials-2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img src="img/testimonials/testimonials-3.jpg" class="d-block mx-auto rounded-circle mt-5"
+              alt="testimonials-3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Portfolio ===== -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <div class="heading text-center mb-5">
+        <span class="d-inline-block title-before text-uppercase text-primary mb-2 rounded-pill">Portfolio</span>
+        <h3 class="display-6">Check Our <span class="text-primary">Portfolio</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque libero consequatur quod voluptas
+          repudiandae!
+        </p>
+      </div>
+      <ul class="list-group list-group-horizontal justify-content-center mb-4">
+        <li class="list-group-item active" data-filter="all">All</li>
+        <li class="list-group-item" data-filter="app">App</li>
+        <li class="list-group-item" data-filter="photo">Photo</li>
+        <li class="list-group-item" data-filter="web">Web</li>
+      </ul>
+      <div class="filterd-items d-grid" id="lightgallery" data-aos="fade-up" data-aos-duration="1500"
+        data-aos-delay="200">
+        <a href="img/portfolio/portfolio-1.jpg" class="app all">
+          <img src="img/portfolio/portfolio-1.jpg" alt="Portfolio 1" class="w-100 h-100 p-2 shadow">
+        </a>
+        <a href="img/portfolio/portfolio-2.jpg" class="app all">
+          <img src="img/portfolio/portfolio-2.jpg" alt="Portfolio 2" class="w-100 h-100 p-2 shadow">
+        </a>
+        <a href="img/portfolio/portfolio-3.jpg" class="photo all">
+          <img src="img/portfolio/portfolio-3.jpg" alt="Portfolio 3" class="w-100 h-100 p-2 shadow">
+        </a>
+        <a href="img/portfolio/portfolio-4.jpg" class="photo all">
+          <img src="img/portfolio/portfolio-4.jpg" alt="Portfolio 4" class="w-100 h-100 p-2 shadow">
+        </a>
+        <a href="img/portfolio/portfolio-5.jpg" class="web all">
+          <img src="img/portfolio/portfolio-5.jpg" alt="Portfolio 5" class="w-100 h-100 p-2 shadow">
+        </a>
+        <a href="img/portfolio/portfolio-6.jpg" class="web all">
+          <img src="img/portfolio/portfolio-6.jpg" alt="Portfolio 6" class="w-100 h-100 p-2 shadow">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="py-5 overflow-hidden">
+    <div class="container">
+      <div class="heading text-center mb-5">
+        <span class="d-inline-block title-before text-uppercase text-primary mb-2 rounded-pill">Contact Us</span>
+        <h3 class="display-6">Check Our <span class="text-primary">Contact Us</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati neque libero consequatur quod voluptas
+          repudiandae!
+        </p>
+      </div>
+      <div class="row call mb-5" data-aos="zoom-out-left" data-aos-duration="1000">
+        <div class="col-lg-6">
+          <div class="shadow p-3 text-center text-muted">
+            <i
+              class="bi bi-geo-alt-fill fs-2 text-primary rounded-circle d-inline-flex justify-content-center align-items-center mb-3"></i>
+            <h5>Our Address</h5>
+            <p>A108 Adam Streat, New York, Ny 535022</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="shadow p-3 text-center text-muted">
+            <i
+              class="bi bi-envelope fs-2 text-primary rounded-circle d-inline-flex justify-content-center align-items-center mb-3"></i>
+            <h5>Email Us</h5>
+            <p>contact@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="shadow p-3 text-center text-muted">
+            <i
+              class="bi bi-telephone fs-2 text-primary rounded-circle d-inline-flex justify-content-center align-items-center mb-3"></i>
+            <h5>Call Us</h5>
+            <p>+1 5589 55488 55</p>
+          </div>
+        </div>
+      </div>
+      <div class="row location" data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="200">
+        <div class="col-lg-6">
+          <iframe class="border-0 p-2 shadow"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19972.75577284286!2d31.279863575181743!3d30.072526272442904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1730565393548!5m2!1sar!2seg"
+            width="100%" height="379.33" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-lg-6">
+          <form action="" class="shadow p-4">
+            <div class="row form">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="">
+                  <label for="floatingInput">Your Name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingPassword" placeholder="">
+                  <label for="floatingPassword">Your Email</label>
+                </div>
+              </div>
+              <div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="">
+                  <label for="floatingInput">Your Subject</label>
+                </div>
+              </div>
+              <div>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="" id="floatingTextarea" style="height: 130px"></textarea>
+                  <label for="floatingTextarea">Message</label>
+                </div>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="py-5 bg-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="text-muted">
+            <h4 class="text-dark">Ag Coding</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quisquam, nam earum atque quam nemo.
+            </p>
+            <p><b>Email</b>: info@example.com</p>
+            <p><b>Phone</b>: +111 22 333 4444</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-lg-flex justify-content-center">
+          <div>
+            <h6 class="text-dark">Useful Links</h6>
+            <ul class="footer-list list-unstyled">
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-lg-flex justify-content-center">
+          <div>
+            <h6 class="text-dark">Useful Links</h6>
+            <ul class="footer-list list-unstyled">
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+              <li><a class="text-muted text-decoration-none ps-3" href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-lg-flex justify-content-center">
+          <div class="text-muted">
+            <h6 class="text-dark">Our Social Network</h6>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, nisi. Veritatis, provident.</p>
+            <div class="social d-flex gap-2">
+              <a class="list-unstyled bg-primary text-light d-flex justify-content-center align-items-center rounded"
+                href="#">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a class="list-unstyled bg-primary text-light d-flex justify-content-center align-items-center rounded"
+                href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a class="list-unstyled bg-primary text-light d-flex justify-content-center align-items-center rounded"
+                href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a class="list-unstyled bg-primary text-light d-flex justify-content-center align-items-center rounded"
+                href="#">
+                <i class="bi bi-skype"></i>
+              </a>
+              <a class="list-unstyled bg-primary text-light d-flex justify-content-center align-items-center rounded"
+                href="#">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Modal ===== -->
+  <div class="modal fade" id="video">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title">Video</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <object data="https://www.youtube.com/embed/jzSQL6l5Fjc?feature=shared" class="w-100"></object>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Scroll Out JS ===== -->
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
+  <!-- ===== Light Gallery JS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"
+    integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ===== Aos JS ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- ===== Bootstrap 5 Js ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- ===== Main JS File ===== -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
